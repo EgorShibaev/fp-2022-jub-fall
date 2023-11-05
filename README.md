@@ -1,27 +1,21 @@
-# Отчёт
+# Report
 
-## Вычислительная математика
+## Computational Mathematics
 
-Минимум:
+* Library
+* User sets an acceptable error and a definite integral as a function in Haskell
+* Implement 3 methods of calculating the definite integral
+* Error handling
+* Unit tests
+* A console (or another user) interface where the user can set a definite integral and get an answer, without coding in Haskell
+* Property-based testing
 
-* Библиотека
-* Пользователь задает допустимую ошибку и определенный интеграл как функцию на хаскелле
-* Реализуете 3 метода вычисления определенного интеграла
-* Обработка ошибок
-* Юнит-тесты
+## How it Works
 
-Дополнительные задачи:
+The library provides two functions: a function that returns the obtained value based on the number of steps, and a function that returns the value based on the acceptable error. Three methods of integration are implemented: linear approximation, the method of average rectangles, and parabolic approximation.
 
-* Консольный (или другой пользовательский) интерфейс, где пользователь может задать определенный интеграл и получить ответ, не кодя на хаскелле
-* Property-based тестирование
+A console application is implemented, in which the user specifies the function, boundaries, method, and error, and receives the value of the integral.
 
-## How it works
+## Testing
 
-Библиотека предоставляет 2 функции: функция, которая по количеству шагов возвращает полученное значение, и функция, которая по допустимой ошибке возвращает 
-значение. Реализованы три метода интегрирования: линейная аппроксимация, метод средних прямоугольников и параболическая аппроксимация. 
-
-Реализованно консольное приложение, в котором пользователь задаёт функцию, границы, метод и ошибку, а получает значение интеграла.
-
-## Тестирование 
-
-Реализованно неслько юнит-тесов и proper-based тестирование (библиотека Hedgehog). 
+Several unit tests and property-based testing (Hedgehog library) have been implemented.
